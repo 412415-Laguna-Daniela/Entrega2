@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Corral</title>
+      <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../Imagenes/header.img.png" alt="logo Alfa Corral" width="100">
+        </a>
+
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/actividades.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/eventos.html">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/fotos.html">Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <!-- Sección Contacto -->
+      <section class="mb-5">
+        <div class="row align-items-center">
+          <!-- Formulario -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold text-center text-lg-start">Contactanos</h2>
+            <p class="text-center text-lg-start">
+              ¿Querés saber más sobre nuestras actividades o reservar una experiencia? Escribinos y con gusto te responderemos. Estamos para ayudarte a planear una visita inolvidable en Alfa Corral.
+            </p>
+
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control bg-arena border-0" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control bg-arena border-0" placeholder="Email" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <select class="form-select bg-arena border-0" required>
+                  <option value="">¿Sobre qué quiero saber más información?</option>
+                  <option value="Actividades">Actividades</option>
+                  <option value="Eventos">Eventos</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <textarea class="form-control bg-arena border-0" rows="5" placeholder="Mensaje" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-secondary px-4">Enviar</button>
+            </form>
+          </div>
+
+          <!-- Imagen del caballo -->
+          <div class="col-lg-6 text-center">
+            <img src="../Imagenes/contacto.img.png" alt="Caballo en campo" class="img-fluid rounded">
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Ubicación -->
+      <section>
+        <h2 class="fw-bold text-center mb-3">¿DÓNDE ENCONTRARNOS?</h2>
+        <p class="text-center mb-4">
+          Alfa Corral te espera en un entorno natural único, a pocos minutos de la ciudad. Vení a disfrutar del campo, el aire libre y los caballos en un lugar pensado para relajarte y conectar con lo esencial. <br>
+          Unquillo, Córdoba
+        </p>
+
+        <div class="row g-3">
+          <!-- Imagen a la izquierda -->
+          <div class="col-md-6">
+            <img src="../Imagenes/ubicacion.img.jpeg" alt="Personas a caballo en la naturaleza" class="img-fluid rounded">
+          </div>
+
+          <!-- Mapa a la derecha -->
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/place/Centro+Ecuestre+Alfacorral/@-31.2385668,-64.289998,17z/data=!3m1!4b1!4m6!3m5!1s0x943282e1e85a2121:0x76a2911507eaef29!8m2!3d-31.2385668!4d-64.289998!16s%2Fg%2F11fxvnv4f_?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYwMi4wIKXMDSoASAFQAw%3D%3D"
+              class="w-100 rounded"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-arena text-dark py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+          <img src="../imagenes/header.img.png" alt="Logo Alfa Corral" class="img-fluid" style="max-height: 60px;">
+        </div>
+
+        <!-- Texto legal -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2025 Alfa Corral. Todos los derechos reservados.</p>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="col-md-4 text-center text-md-end">
+          <a href="#" class="text-dark me-3 text-decoration-none">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="https://www.facebook.com/AlfaCorral" class="text-dark me-3 text-decoration-none" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a href="https://www.instagram.com/alfa_corral" class="text-dark text-decoration-none" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

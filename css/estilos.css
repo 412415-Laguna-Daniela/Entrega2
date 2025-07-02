@@ -1,0 +1,276 @@
+/* Reset General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'The Seasons', serif;
+  background-color: #fff;
+  color: #2d2d2d;
+}
+
+/* Navbar */
+nav ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #d4b294;
+  color: white !important;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../imagenes/main.img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #2d2d2d;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 1;
+}
+
+.hero .contenido {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .contenido h1 {
+  font-size: clamp(2.3rem, 5vw, 6.5rem);
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.hero-texto span {
+  font-weight: bold;
+}
+
+/* Historia Section */
+.historia {
+  background-image: url('../imagenes/main_fondo.img.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #110606;
+  text-align: center;
+  position: relative;
+}
+
+.historia h2 {
+  font-family: 'montserrat', serif;
+  font-size: clamp(2.3rem, 5vw, 5.0rem);
+}
+
+.historia p {
+  font-family: 'montserrat', serif;
+  max-width: 1200px;
+  margin: 0 auto 1rem auto;
+  font-size: clamp(1.1rem, 3vw, 1.9rem);
+}
+
+.historia .destacado {
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+/* Footer */
+footer {
+  font-size: 1.1rem;
+  background-color: #d4b294;
+}
+
+/* Página: Fotos */
+.galeria {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.galeria h2 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.galeria p {
+  font-size: clamp(1.3rem, 5vw, 1.8rem);
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.galeria-imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.galeria-imagenes img {
+  width: 30%;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria-imagenes img:hover {
+  transform: scale(1.05);
+}
+
+/* Página: Eventos */
+.eventos {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fila.reverse {
+  flex-direction: row-reverse;
+}
+
+.fila img {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.texto {
+  width: 50%;
+}
+
+.texto h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Página: Contacto */
+.bg-arena {
+  background-color: #d5b495;
+}
+
+textarea.form-control,
+input.form-control,
+select.form-select {
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+/* Sección: Ubicación */
+.ubicacion {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.ubicacion h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ubicacion p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.ubicacion-imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ubicacion-imagenes img,
+.ubicacion-imagenes iframe {
+  width: 45%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Página: Actividades */
+.actividades {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.actividad {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.actividad.reverse {
+  flex-direction: row-reverse;
+}
+
+.actividad img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.contenido {
+  width: 50%;
+}
+
+.contenido h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contenido p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
