@@ -30,7 +30,7 @@ nav ul {
 
 /* Hero Section */
 .hero {
-  background-image: url('../imagenes/main.img.jpg');
+  background-image: url('../img/main.img.jpg');
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -72,7 +72,7 @@ nav ul {
 
 /* Historia Section */
 .historia {
-  background-image: url('../imagenes/main_fondo.img.jpg');
+  background-image: url('../img/main_fondo.img.jpg');
   background-size: cover;
   background-position: center;
   height: 60vh;
